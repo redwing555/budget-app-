@@ -3,7 +3,8 @@ class CreateOperations < ActiveRecord::Migration[7.0]
     create_table :operations do |t|
       t.string :name
       t.float :amount
-
+      t.references :user, null: false, foreign_key: true
+      
       t.timestamps
     end
   end
