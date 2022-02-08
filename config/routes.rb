@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'groups/new'
+  get 'groups/index'
+  get 'groups/create'
+  get 'groups/destroy'
   
   
   devise_for :users
