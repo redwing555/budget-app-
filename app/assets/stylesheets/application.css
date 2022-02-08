@@ -68,5 +68,35 @@ html {
     
 }
 
+.navigation{
+    background-color: #3778c2;
+    margin-left: -2rem;
+    padding-top: 1rem;
+}
+
+
+.navigation-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.next{
+    border: none;
+}
+
+.input{
+    margin: 0;
+    border-top: 1px solid rgb(163, 163, 163);
+    width: 20rem;
+    height: 3rem;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    resize: none;
+    outline: none;
+}
+
 
 
