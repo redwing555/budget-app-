@@ -24,7 +24,7 @@ class GroupsController < ApplicationController
   
     def show
       @group = Goup.find_by_id(params[:id])
-      @transactions = @group.transactions_with_user
+      @operations = @group.operations_with_user
     end
   
     def destroy

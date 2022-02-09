@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+user1 = User.new(name: "toto", email:"tt@test.com", password:"test11")
+user1.save!
+group1 = Group.new(name: "Food", icon: "this is an icon", user_id: user1.id)

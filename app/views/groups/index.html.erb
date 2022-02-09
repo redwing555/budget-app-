@@ -1,2 +1,19 @@
-<h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
+
+
+
+<div class="flex space-between mx-5">
+<h3 class="card-title hover-text-gray cursor-pointer">
+    Categories
+</h3>
+</div>
+
+<% @groups.each do |group| %>
+<div>
+<div class="p-2 border mx-5 flex justify-content-between">
+    <%= link_to "#{group.name}", group_path(group) %>
+<div class="w-half">
+        <%= image_tag("#{group.icon}", :alt => "group icon") %>
+</div>
+</div>
+</div>
+<% end %>
