@@ -15,7 +15,15 @@
     </ul>
   </nav>
 
-  <%= render @groups %>
+    <% if @groups.empty? %>
+        <div class="alert alert-info">
+          No categories for now !
+        </div>
+      <% else %>
+          <%= render @groups %>
+      <% end %>
+
+ 
 
 </div>
 

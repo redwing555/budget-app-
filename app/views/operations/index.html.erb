@@ -15,7 +15,15 @@
     </ul>
   </nav>
 
-  <%= render @operations %>
+   <% if @operations.empty? %>
+        <div class="alert alert-info">
+          No transactions for now !
+        </div>
+      <% else %>
+         <%= render @operations %>
+      <% end %>
+
+  
 
 </div>
 
