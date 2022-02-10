@@ -3,5 +3,11 @@ Rails.application.routes.draw do
   resources :groups  do
     resources :transactions
   end
-  root "users#home"
+  authenticated :user do
+    root 'groups#index', as: :authenticated_root
+  end
+  
+  unauthenticated :user do
+    root to: 'users#home'
+  end
 end

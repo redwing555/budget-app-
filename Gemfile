@@ -71,7 +71,6 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
    gem 'rspec-rails'
 end
-gem 'cancancan'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]

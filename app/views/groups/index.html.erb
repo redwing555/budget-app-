@@ -1,19 +1,27 @@
+<div class="flex flex-direction-column flex-grow-1 has-background-color">
+   <nav class="navigation px-4">
+    <ul class="navigation-items">
+      <li>
+        <%= link_to root_path do %>
+        <i class="back-icon fa fa-arrow-left text-white cursor-pointer"></i>
+        <%end%>
+      </li>
+      <li>
+        <p class="text-white font-proxima">Categories</p>
+      </li>
+         <li>
+        <%= link_to 'logout' , destroy_user_session_url, method: :delete, class: "logout next text-white bg-transparent cursor-pointer"%>
+    </li>
+    </ul>
+  </nav>
 
+  <%= render @groups %>
 
-
-<div class="flex space-between mx-5">
-<h3 class="card-title hover-text-gray cursor-pointer">
-    Categories
-</h3>
 </div>
 
-<% @groups.each do |group| %>
-<div>
-<div class="p-2 border mx-5 flex justify-content-between">
-    <%= link_to "#{group.name}", group_path(group) %>
-<div class="w-half">
-        <%= image_tag("#{group.icon}", :alt => "group icon") %>
-</div>
-</div>
-</div>
-<% end %>
+
+<button class="footer_btn">
+    <%= link_to 'Add a new category', new_group_path, class: "log" %>
+</button>
+
+
