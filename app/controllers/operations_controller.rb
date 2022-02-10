@@ -6,7 +6,7 @@ class OperationsController < ApplicationController
 
   def index
     @group = Group.find(params[:group_id])
-    @operations = @group.operations
+    @operations = @group.operations.order('created_at DESC')
   end
 
   def create

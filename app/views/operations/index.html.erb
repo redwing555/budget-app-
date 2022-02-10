@@ -13,7 +13,16 @@
         <%= link_to 'logout' , destroy_user_session_url, method: :delete, class: "logout next text-white bg-transparent cursor-pointer"%>
     </li>
     </ul>
+
+   
   </nav>
+   <div class="group_informations">
+        <span><%=@group.name%></span>
+        <span>$ <%=@group.total_amount%></span>
+        
+        </div>
+
+   
 
    <% if @operations.empty? %>
         <div class="alert alert-info">
