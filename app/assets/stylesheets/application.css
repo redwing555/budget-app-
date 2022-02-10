@@ -39,10 +39,11 @@ html {
 .log {
   text-decoration: none;
   color: white;
+
 }
 
-.log:active{
-  text-decoration: none;
+.log:visited{
+  color: white;
 }
 
 .log-in {
