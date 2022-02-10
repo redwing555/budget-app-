@@ -21,10 +21,10 @@
 
   
     <div class="field">
-      <%= form.text_field :name, class: 'input', placeholder: "transaction name", class: "input", required: true %>
+      <%= form.text_field :name, class: 'input', placeholder: "transaction name", class: "input",  id:"Name", required: true %>
     </div>
     <div class="field">
-          <%= form.number_field :amount, class: 'input', placeholder: "transaction amount", class: "input", required: true %>
+          <%= form.number_field :amount, class: 'input', placeholder: "transaction amount", id:"Amount", class: "input", required: true %>
     </div>
    
   <% end %>
