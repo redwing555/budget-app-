@@ -1,5 +1,4 @@
 class GroupsController < ApplicationController
-  
     skip_before_action :authenticate_user!
     load_and_authorize_resource 
     def new
@@ -23,8 +22,8 @@ class GroupsController < ApplicationController
     end
   
     def show
-      @group = Goup.find_by_id(params[:id])
-      @operations = @group.operations_with_user
+      # @group = Goup.find_by_id(params[:group_id])
+      # @operations = @group.operations_with_user
     end
   
     def destroy

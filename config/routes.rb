@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :groups  do
-    resources :transactions
+    resources :operations
   end
   authenticated :user do
     root 'groups#index', as: :authenticated_root
