@@ -4,6 +4,10 @@
 
 An app where you can manage your budget: you can manage a list of transactions associated with a certain category, keeping a detailed record of expenses.
 
+# Live
+
+![You can visit the live version of the app right here!!](https://budgetvio-app.herokuapp.com/)
+
 ## Built With
 - Ruby
 - Ruby on Rails
