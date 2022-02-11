@@ -2,7 +2,7 @@
 
 # Budget App
 
-An application about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+An app where you can manage your budget: you can manage a list of transactions associated with a certain category, keeping a detailed record of expenses.
 
 ## Built With
 - Ruby
