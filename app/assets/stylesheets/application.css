@@ -25,7 +25,7 @@ html {
   min-height: 100%;
 }
 
-.category-btn{
+.category-btn {
   text-decoration: none;
 }
 
@@ -39,10 +39,9 @@ html {
 .log {
   text-decoration: none;
   color: white;
-
 }
 
-.log:visited{
+.log:visited {
   color: white;
 }
 
@@ -55,15 +54,13 @@ html {
   margin-left: -2.5rem;
 }
 
-.date{
+.date {
   color: #808285;
 }
 
-.group-name{
+.group-name {
   color: #6b6b6b;
 }
-
-
 
 .signup {
   color: #808285;
@@ -115,7 +112,7 @@ html {
   height: 3rem;
 }
 
-.group-card{
+.group-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -123,6 +120,7 @@ html {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
 .input {
   margin: 0;
   border-top: none;
@@ -141,7 +139,7 @@ html {
 }
 
 .footer_btn {
-  background-color:#5fb523;
+  background-color: #5fb523;
   border: none;
   border-radius: 2%;
   height: 3rem;
@@ -150,32 +148,27 @@ html {
   position: sticky;
   margin-top: 5rem;
   bottom: 2rem;
-  position: fixed;
-  
 }
 
-.group_informations{
-
-    background-color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: gray;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    height: 3rem;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    
+.group_informations {
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: gray;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
 }
 
 .name {
   border-top: 1px solid rgb(163, 163, 163);
 }
-
 
 .field_with_errors {
   padding: 2px;

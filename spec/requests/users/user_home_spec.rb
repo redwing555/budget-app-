@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Login page', type: :feature do
-
   before { visit new_user_session_path }
 
   scenario 'Page should have a login form' do

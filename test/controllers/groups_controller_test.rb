@@ -1,22 +1,22 @@
-require "test_helper"
+require 'test_helper'
 
 class GroupsControllerTest < ActionDispatch::IntegrationTest
-  test "should get new" do
+  test 'should get new' do
     get groups_new_url
     assert_response :success
   end
 
-  test "should get index" do
+  test 'should get index' do
     get groups_index_url
     assert_response :success
   end
 
-  test "should get create" do
+  test 'should get create' do
     get groups_create_url
     assert_response :success
   end
 
-  test "should get destroy" do
+  test 'should get destroy' do
     get groups_destroy_url
     assert_response :success
   end

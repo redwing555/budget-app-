@@ -1,5 +1,5 @@
 class OperationsController < ApplicationController
-  load_and_authorize_resource 
+  load_and_authorize_resource
   def new
     @operation = Operation.new
   end
@@ -24,6 +24,6 @@ class OperationsController < ApplicationController
   private
 
   def operation_params
-      params.require(:operation).permit(:name, :amount, group_ids: []).merge(user_id: current_user.id)
+    params.require(:operation).permit(:name, :amount, group_ids: []).merge(user_id: current_user.id)
   end
 end
