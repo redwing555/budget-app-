@@ -1,0 +1,11 @@
+
+<div class="group-card has-background-color-white mx-2 mt-1 p-2 card-shadow">
+	<div class="group_card flex flex-row flex-grow-1 flex-direction-column pl-2">
+		<div class="flex flex-row justify-space-between my-2">
+			<h5 class="group-name fw-regular is-flex flex-grow-1"><%= operation.name %></h5>
+        <small class="total-amount fw-bold">$<%= operation.amount %></small> 
+
+		</div>
+		    <small class="date"><%= operation.created_at.strftime("%d %b %Y") %></small>
+	    </div>
+</div>

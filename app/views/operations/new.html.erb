@@ -1,0 +1,30 @@
+
+
+<%= form_with(model:[@group, @operation],url: group_operations_path , data: { turbo: false })  do |form| %>
+
+
+    <nav class="navigation px-4">
+    <ul class="navigation-items">
+      <li>
+        <%= link_to group_operations_path do %>
+        <i class="back-icon fa fa-arrow-left text-white cursor-pointer"></i>
+        <%end%>
+      </li>
+      <li>
+        <p class="text-white font-proxima">Transaction</p>
+      </li>
+         <li>
+          <%= form.submit "Save", class: "logout next text-white bg-transparent cursor-pointer" %>
+    </li>
+    </ul>
+  </nav>
+
+  
+    <div class="field">
+      <%= form.text_field :name, class: 'input', placeholder: "transaction name", class: "input",  id:"Name", required: true %>
+    </div>
+    <div class="field">
+          <%= form.number_field :amount, class: 'input', placeholder: "transaction amount", id:"Amount", class: "input", required: true %>
+    </div>
+   
+  <% end %>

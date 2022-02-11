@@ -1,0 +1,13 @@
+
+<%= link_to group_operations_url(group), class:"category-btn" do %>
+<div class="group-card has-background-color-white mx-2 mt-1 p-2 card-shadow">
+	<%= image_tag(group.icon, class: "image") %>
+	<div class="group_card flex flex-row flex-grow-1 flex-direction-column pl-2">
+		<div class="flex flex-row justify-space-between my-2">
+			<h5 class="group-name fw-regular is-flex flex-grow-1"><%= group.name %></h5>
+ <small class="total-amount fw-bold">$<%= group.total_amount %></small> 
+		</div>
+		<small class="date"><%= group.created_at.strftime("%d %b %Y") %></small>
+	</div>
+</div>
+<% end %>

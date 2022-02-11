@@ -1,0 +1,31 @@
+
+
+<%= form_with(model: @group)  do |form| %>
+
+
+    <nav class="navigation px-4">
+    <ul class="navigation-items">
+      <li>
+        <%= link_to groups_path do %>
+        <i class="back-icon fa fa-arrow-left text-white cursor-pointer"></i>
+        <%end%>
+      </li>
+      <li>
+        <p class="text-white font-proxima">Category</p>
+      </li>
+         <li>
+          <%= form.submit "Save", class: "logout next text-white bg-transparent cursor-pointer" %>
+    </li>
+    </ul>
+  </nav>
+
+  
+    <div class="field">
+      <%= form.text_field :name, class: 'input', placeholder: "category name", class: "input", required: true %>
+    </div>
+    <div class="field">
+          <%= form.url_field :icon, class: 'input', placeholder: "icon url", class: "input", required: true %>
+    </div>
+   
+  <% end %>
+

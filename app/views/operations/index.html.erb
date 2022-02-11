@@ -1,0 +1,42 @@
+<div class="flex flex-direction-column flex-grow-1 has-background-color">
+   <nav class="navigation px-4">
+    <ul class="navigation-items">
+      <li>
+        <%= link_to root_path do %>
+        <i class="back-icon fa fa-arrow-left text-white cursor-pointer"></i>
+        <%end%>
+      </li>
+      <li>
+        <p class="text-white font-proxima">Transactions</p>
+      </li>
+         <li>
+        <%= link_to 'logout' , destroy_user_session_url, method: :delete, class: "logout next text-white bg-transparent cursor-pointer"%>
+    </li>
+    </ul>
+
+   
+  </nav>
+   <div class="group_informations">
+        <span><%=@group.name%></span>
+        <span>$ <%=@group.total_amount%></span>
+        
+        </div>
+
+   
+
+   <% if @operations.empty? %>
+        <div class="alert alert-info">
+          No transactions for now !
+        </div>
+      <% else %>
+         <%= render @operations %>
+      <% end %>
+
+  
+
+</div>
+
+
+<button class="footer_btn">
+    <%= link_to 'Add a new transaction', new_group_operation_path, class: "log" %>
+</button>
