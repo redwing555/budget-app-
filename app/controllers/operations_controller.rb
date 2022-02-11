@@ -12,11 +12,6 @@ class OperationsController < ApplicationController
   def create
     @group = Group.find(params[:group_id])
     @operation = @group.operations.create(operation_params)
-
-    # @operation = Operation.new(operation_params)
-    # @operation.user = current_user
-  
-
     if @operation.save
       flash[:notice] = 'operation added successfully'
       redirect_to group_operations_path

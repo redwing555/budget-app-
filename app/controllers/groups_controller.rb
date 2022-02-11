@@ -21,11 +21,6 @@ class GroupsController < ApplicationController
       end
     end
   
-    def show
-      # @group = Goup.find_by_id(params[:group_id])
-      # @operations = @group.operations_with_user
-    end
-  
     def destroy
       previous_url = request.env['HTTP_REFERER']
       group = group.find(params[:id])

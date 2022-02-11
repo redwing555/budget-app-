@@ -4,19 +4,4 @@ class UsersController < ApplicationController
   def home
     @current_user = current_user
   end
-
-  def index
-  end
-
-  def new
-  end
-
-  def create
-  end
-
-  def update
-  end
-
-  def destroy
-  end
 end
