@@ -6,7 +6,7 @@ An app where you can manage your budget: you can manage a list of transactions a
 
 # Live
 
-![You can visit the live version of the app right here!!](https://budgetvio-app.herokuapp.com/)
+[You can visit the live version of the app right here!!](https://budgetvio-app.herokuapp.com/)
 
 ## Built With
 - Ruby
