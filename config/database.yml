@@ -81,6 +81,5 @@ test:
 #
 production:
   <<: *default
-  database: budget_app__production
-  username: budget_app_
-  password: <%= ENV["BUDGET_APP__DATABASE_PASSWORD"] %>
+   adapter: postgresql
+   database: db/production.sqlite3

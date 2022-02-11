@@ -173,6 +173,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (7.0.1)
       actionpack (= 7.0.1)
       activesupport (= 7.0.1)
@@ -230,6 +235,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.4.2)
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
     strscan (3.0.1)
@@ -270,13 +276,15 @@ DEPENDENCIES
   devise
   importmap-rails
   jbuilder
-  pg (~> 1.1)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.1)
+  rails_12factor
   rspec-rails
   rubocop (>= 1.0, < 2.0)
   selenium-webdriver
   sprockets-rails
+  sqlite3
   stimulus-rails
   turbo-rails
   tzinfo-data
